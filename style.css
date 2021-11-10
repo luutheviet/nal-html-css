@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial Narrow, 'Noto Serif JP', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Header */
+
+.header-top {
+    padding: 16px;
+}
+
+.header-block {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.header-icon a i {
+    color: black;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.header-logo {
+    text-align: center;
+}
+
+.header-logo a {
+    font-size: 2.8rem;
+    color: black;
+    font-family: Arial Narrow, sans-serif;
+    font-weight: 600;
+}
+
+.logo-content {
+    color: #ccc;
+    font-size: 0.7rem;
+}
+
+.header-right-content {
+    float: right;
+}
+
+.header-right-content a {
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 0.2rem;
+}
+
+.header-right-content a i {
+    font-size: 0.4;
+}
+
+.header-main-content {
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.header-main-content ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-main-content ul li {
+    margin: 0px 18px;
+    padding: 6px 16px;
+}
+
+.header-main-content ul li a {
+    color: #000;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.lang-active {
+    text-decoration: underline !important;
+}
+
+.language {
+    transition: 0.2s;
+}
+
+.language:hover {
+    color: cornflowerblue;
+}
+
+
+/* Content */
+
+.hot-news {
+    height: 455px;
+}
+
+.new-wraper {
+    position: relative;
+    width: 100%;
+    max-height: 455px;
+}
+
+.new-wraper img {
+    height: 455px;
+}
+
+.news {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    background-color: white;
+    padding: 8px 24px;
+}
+
+.type-news {
+    position: absolute;
+    bottom: 100%;
+    padding: 3px 8px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.type-news.red {
+    background-color: #f72300;
+}
+
+.type-news.purple {
+    background-color: #5f35ac;
+}
+
+.type-news.blue {
+    background-color: #2196f3;
+}
+
+.news-title {
+    margin-bottom: 8px;
+}
+
+.news-title h2 a {
+    color: black;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.news-title :hover {
+    color: #58c4dc;
+}
+
+.news-content p {
+    color: #7d7d7d;
+    text-indent: 16px;
+    line-height: 1.2rem;
+}
+
+.top-news {
+    height: 220px;
+}
+
+.new-wraper-top-news {
+    position: relative;
+    height: 220px;
+}
+
+.new-wraper-top-news img {
+    height: 100%;
+}
+
+.news-content-top-viewed p {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+
+/* News section 2 */
+
+.news-section-2 {
+    margin-top: 12px;
+}
+
+.acticle-title h2 {
+    font-weight: bold;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.article-wraper {
+    margin-bottom: 50px;
+}
+
+.left {
+    width: 210px;
+    height: 157px;
+}
+
+.left a img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.right {
+    padding: 0px 12px;
+}
+
+.right-category {
+    color: white;
+    background-color: #cfc89b;
+    padding: 0px 2px;
+    font-size: 0.8rem;
+}
+
+.right-category:hover {
+    color: white;
+}
+
+.category_article_title {
+    margin-top: 8px;
+}
+
+.category_article_title a {
+    color: black;
+    font-weight: bolder;
+}
+
+.article_date {
+    margin-top: 10px;
+}
+
+.article_date a {
+    color: black;
+}
+
+.category_article_content {
+    margin-top: 8px;
+}
+
+.category_article_content p {
+    text-indent: 20px;
+    color: #7d7d7d;
+}
+
+.article-title {
+    margin: 1.2rem 0;
+    position: relative;
+}
+
+.article-title h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.article-title::before {
+    position: absolute;
+    right: 20px;
+    width: 420px;
+    top: 40%;
+    height: 2px;
+    content: '';
+    background-color: #eee;
+}
+
+.article-title::after {
+    position: absolute;
+    width: 100px;
+    left: 195px;
+    top: 50%;
+    height: 2px;
+    content: '';
+    background-color: #ff8400;
+}
+
+.widget-title {
+    margin: 1.2rem 0;
+    position: relative;
+}
+
+.widget-title h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.widget-title::before {
+    position: absolute;
+    right: -10px;
+    width: 120px;
+    top: 40%;
+    height: 2px;
+    content: '';
+    background-color: #eee;
+}
+
+.widget-title::after {
+    position: absolute;
+    width: 40px;
+    left: 150px;
+    top: 50%;
+    height: 2px;
+    content: '';
+    background-color: black;
+}
+
+.media {
+    margin-bottom: 34px;
+}
+
+.media-left {
+    margin-right: 10px;
+}
+
+.media-left a img {
+    width: 100px;
+    height: 88px;
+}
+
+.media-right-title {
+    background-color: black;
+    color: white !important;
+    padding: 0px 4px;
+    font-size: 0.9rem;
+}
+
+.media-right a {
+    margin: 6px 0px;
+    font-size: 0.9rem;
+    line-height: 18px;
+}
+
+.tag-body {
+    margin-bottom: 34px;
+}
+
+.tag-body span a {
+    color: #7d7d7d;
+    font-size: 0.7rem;
+}
+
+.tags-title {
+    margin: 1.2rem 0;
+    position: relative;
+}
+
+.tags-title h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.tags-title::before {
+    position: absolute;
+    right: -10px;
+    width: 120px;
+    top: 40%;
+    height: 2px;
+    content: '';
+    background-color: #eee;
+}
+
+.tags-title::after {
+    position: absolute;
+    width: 40px;
+    left: 150px;
+    top: 50%;
+    height: 2px;
+    content: '';
+    background-color: black;
+}
+
+.footer-container {
+    border-top: 2px solid black;
+}
+
+.footer-logo a img {
+    width: 348px;
+    height: 122px;
+}
+
+.footer-content {
+    margin-top: 1rem;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    color: #7d7d7d;
+    line-height: 1rem;
+}
+
+.banner {
+    margin: 30px 0px;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .header-main-content ul li {
+        margin: 0px 0px;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* X-Large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {}
